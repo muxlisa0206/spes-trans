@@ -1,0 +1,367 @@
+#hero{
+    background-image: url(/assets/images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.hero{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.hero-title{
+    font-size: 60px;
+    max-width: 700px;
+    line-height: 100%;
+    font-weight: 700;
+    color: var(--first-color);
+}
+.hero-desc{
+    font-size: 20px;
+    line-height: 140%;
+    max-width: 775px;
+    font-weight: 400;
+    color: white;
+}
+.hero-btn{
+    padding: 20px 36px;
+    width: 300px;
+    border-radius: 8px;
+    background-color: var(--first-color);
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 4px 4px 7px green;
+}
+.hero-btn:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width:805px) {
+    .hero-title{
+        font-size: 30px;
+    }
+    .hero-desc{
+        font-size: 16px;
+    }
+    .hero{
+        text-align: center;
+    }
+    .hero-btn{
+        margin: 0 auto;
+    }
+}
+
+.pochemu-title, .material-title{
+    margin-top: 50px;
+    font-size: 42px;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.pochemu-boxes{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+    justify-content: center;
+}
+
+.pochemu-card{
+    border: 1px solid #A8A8A8;
+    color: #393838;
+    max-width: 298px;
+    height: 90px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+.pochemu-card:hover{
+    box-shadow: 2px 2px 5px var(--first-color);
+    transform: scale(0.9);
+}
+.pochemu-card img{
+    max-width: 30px;
+    height: 30px;
+}
+.pochemu-card p{
+    width: 171px;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+
+.material-boxes{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.material-cards img{
+    max-width: 320px;
+    height: 394px;
+    border-radius: 8px;
+}
+.material-desc{
+    margin-top: -50px;
+    margin-left: 30px;
+    font-size: 25px;
+    line-height: 100%;
+    color: white;
+    font-weight: 700;
+}
+.material-cards:hover{
+    box-shadow: 0px 4px 80px 0px #7185A480;
+    transform: scale(0.9);
+}
+
+.kompaniya{
+    display: flex;
+    gap: 100px;
+}
+.kompaniya-content{
+    margin-top: 100px;
+    width: 576px;
+    height: 234px;
+}
+.kompaniya-statistic{
+    margin-top: 100px;
+    width: 700px;
+    height: 446px;
+    background-color: #F8F8F8;
+    border-radius: 24px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-bottom: 90px;
+}
+.kompaniya-statistic h1{
+    font-size: 88px;
+    line-height: 142%;
+    font-weight: 300;
+}
+.card-desc{
+    font-size: 24px;
+    line-height: 124%;
+    font-weight: 400;
+    color: #67675F;
+}
+.kompaniya-title{
+    font-size: 42px;
+    line-height: 100%;
+    font-weight: 500;
+}
+.kompaniya-desc{
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 142%;
+    font-weight: 400;
+    color: #67675F;
+}
+@media (max-width:870px) {
+    .kompaniya{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .kompaniya-title{
+        font-size: 22px;
+    }
+    .kompaniya-desc{
+        font-size: 14px;
+    }
+    .kompaniya-content{
+        margin-top: 150px;
+        text-align: center;
+        width: 326px;
+    }
+    .kompaniya-statistic{
+        width: 350px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+#savollar{
+    background-color: #F8F8F8;
+}
+.savollar-content{
+    width: 489px;
+    height: 362px;
+    margin-top: 150px;
+}
+.savollar-title{
+    font-size: 42px;
+    line-height: 100%;
+    font-weight: 500;
+}
+.savollar-content p{
+    margin-top: 50px;
+    font-size: 22px;
+    color: #1E1E1C;
+}
+.savollar{
+    display: flex;
+    gap: 185px;
+}
+
+form{
+    margin-top: 150px;
+    border: 1px solid #DDDDDD;
+    max-width: 900px;
+    height: 475px;
+    padding: 40px;
+    box-shadow: 0px 4px 40px 0px #07113312;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input, textarea{
+    padding: 20px 220px;
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+textarea{
+    height: 200px;
+}
+
+@media (max-width:1157px) {
+    form{
+        max-width: 450px;
+    }
+    input, textarea{
+        padding: 20px 150px;
+    }
+    .savollar{
+        gap: 75px;
+    }
+}
+@media (max-width:856px) {
+    .savollar{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width:489px) {
+    .savollar-content{
+        width: 370px;
+    }
+    .savollar-title{
+        font-size: 22px;
+    }
+    .savollar-content p{
+        font-size: 18px;
+    }
+    form{
+        max-width: 350px;
+    }
+    input, textarea{
+        padding: 20px 50px;
+    }
+}
+
+.dastavka{
+    display: flex;
+    gap: 30px;
+}
+
+.dastavka-content{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.dastavka-title{
+    font-size: 42px;
+    line-height: 100%;
+    font-weight: 500;
+}
+.dastavka-desc{
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 400;
+    max-width: 679px;
+}
+.dastavka-cards{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.dastavka-cards p{
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 300;
+}
+
+.dastavka-boxes{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    margin-top: 150px;
+}
+.dastavka-box{
+    background-color: #F8F8F8;
+    max-width: 340px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.dastavka-box:hover{
+    box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.364);
+}
+.dastavka-box h6{
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 500;
+    color: #393838;
+}
+.dastavka-box p{
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 400;
+    color: #848692;
+}
+@media (max-width:1000px) {
+    .dastavka{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dastavka-img{
+        max-width: 700px;
+        height: 750px;
+    }
+}
+@media (max-width:700px) {
+    .dastavka{
+        text-align: center;
+    }
+    .dastavka-img{
+        max-width: 350px;
+        height: 400px;
+    }
+    .dastavka-cards{
+        justify-content: center;
+    }
+    .dastavka-boxes{
+        justify-content: center;
+    }
+}
